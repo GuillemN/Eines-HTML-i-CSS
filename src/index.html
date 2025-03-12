@@ -9,32 +9,44 @@
 <body>
     <header>
         <h1>Cuines del Món</h1>
-        <nav>
+        <nav aria-label="Navegació principal">
             <ul>
                 <li><a href="categoria.html">Plats</a></li>
                 <li><a href="enllacos.html">Enllaços</a></li>
             </ul>
         </nav>
     </header>
-    <section class="hero">
-        <img src="img/cuina.jpg" alt="Cuines del món">
-        <h2>Descobreix els sabors d’arreu del món</h2>
-        <p>Explora receptes, restaurants i cultures gastronòmiques de tots els continents.</p>
-        <a href="categoria.html" class="btn">Explorar</a>
-    </section>
-    <section class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="img/pizza.jpg" alt="Pizza"></div>
-          <div class="swiper-slide"><img src="img/sushi.jpg" alt="Sushi"></div>
-          <div class="swiper-slide"><img src="img/tacos.jpg" alt="Tacos"></div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </section>
+    <main id="main-content">
+        <section class="hero">
+            <img src="img/cuina.jpg" alt="Plats variats de diferents cultures">
+            <div class="hero-text">
+                <h2>Descobreix els sabors d’arreu del món</h2>
+                <p>Explora receptes, restaurants i cultures gastronòmiques de tots els continents.</p>
+                <a href="categoria.html" class="btn">Explorar</a>
+            </div>
+        </section>
+        <section class="about">
+            <h2>Sobre nosaltres</h2>
+            <article>
+                <p>Apassionats per la cuina, volem compartir amb tu les millors receptes i experiències gastronòmiques del món.</p>
+            </article>
+        </section>
+        <section class="swiper" role="region" aria-labelledby="carrusel-title">
+            <h2 id="carrusel-title">Plats destacats</h2>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/pizza-napolitana.jpg" alt="Pizza napolitana"></div>
+                <div class="swiper-slide"><img src="img/sushi.jpg" alt="Plat de sushi japonès"></div>
+                <div class="swiper-slide"><img src="img/tacos.jpg" alt="Tacos mexicans amb carn i verdures"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 Cuines del Món</p>
+        <p>&copy; 2025 Cuines del Món</p>
     </footer>
+
     <script type="module" src="./index.js"></script>
 </body>
 </html>

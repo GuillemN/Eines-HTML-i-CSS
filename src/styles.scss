@@ -6,6 +6,8 @@ body {
   text-align: center;
   background-color: #f8f8f8;
 }
+
+/* Header */
 header {
   background-color: #333;
   color: white;
@@ -14,31 +16,38 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
+
 nav ul li {
   margin: 0 15px;
 }
+
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
+
+/* Hero Section */
 .hero {
   position: relative;
   width: 100%;
   height: 400px;
   overflow: hidden;
 }
+
 .hero img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .hero h2 {
   position: absolute;
   top: 30%;
@@ -48,6 +57,7 @@ nav ul li a {
   font-size: 2.5rem;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
+
 .hero p {
   position: absolute;
   top: 50%;
@@ -57,6 +67,7 @@ nav ul li a {
   font-size: 1.2rem;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
+
 .hero .btn {
   position: absolute;
   top: 70%;
@@ -75,7 +86,7 @@ nav ul li a {
   background-color: #cc5200;
 }
 
-/* carrusel */
+/* Contenidor del carrusel */
 .swiper {
   width: 80%;
   max-width: 900px;
@@ -85,10 +96,15 @@ nav ul li a {
   overflow: hidden;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Ajustar imatges dins del carrusel */
+
+
+/* Botons de navegació */
 .swiper-button-prev,
 .swiper-button-next {
-  color: white !important; 
-  background: rgba(0, 0, 0, 0.6); 
+  color: white !important; /* Assegura que la icona sigui blanca */
+  background: rgba(0, 0, 0, 0.6); /* Fons semi-transparent */
   border-radius: 50%;
   width: 50px;
   height: 50px;
@@ -97,65 +113,193 @@ nav ul li a {
   align-items: center;
   transition: background 0.3s ease-in-out;
   position: absolute;
-  top: 80%; 
+  top: 80%; /* Centrat verticalment */
   transform: translateY(-50%);
   z-index: 10;
 }
+
+
 .swiper-button-prev {
   left: 15px;
 }
+
 .swiper-button-next {
   right: 15px;
 }
+
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  background: rgba(0, 0, 0, 0.8); 
+  background: rgba(0, 0, 0, 0.8); /* Fons més opac en hover */
 }
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   font-size: 20px;
   font-weight: bold;
 }
+
+/* Paginació */
 .swiper-pagination {
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
 }
+
 .swiper-pagination-bullet {
   background: white;
   opacity: 0.7;
 }
+
 .swiper-pagination-bullet-active {
   background: #007bff;
   opacity: 1;
 }
+
+/* Ajustar imatges dins del carrusel */
 .swiper-wrapper {
   display: flex;
   align-items: center;
 
 }
+
 .swiper-button-prev::after {
-  content: "<"; 
+  content: "<"; /* Substituir 'prev' per '<' */
 }
 
 .swiper-button-next::after {
-  content: ">"; 
+  content: ">"; /* Substituir 'next' per '>' */
 }
+
 .swiper-slide {
-  flex-shrink: 0; 
+  flex-shrink: 0; /* Evita que es comprimeixin */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; 
+  width: 100%; /* Assegura que cada slide ocupa tot l'espai disponible */
   height: 100%;
+
 }
+
 .swiper-slide img {
-  object-fit: cover; 
+ 
+
+  object-fit: cover; /* Garanteix que la imatge ompli el contenidor sense deformar-se */
   border-radius: 10px;
 }
 
+
+
+
+/* Categories */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+/* Cada plat com a targeta petita */
+.plat {
+  background: white;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.plat:hover {
+  transform: scale(1.05);
+}
+
+/* Enllaç a la pàgina de detall */
+.plat a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Imatge dins la targeta */
+.plat img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Informació de cada plat */
+.plat-info {
+  padding: 10px;
+}
+
+.plat-info h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.plat-info p {
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
+/* Secció de detall */
+.detall {
+  padding: 20px;
+}
+
+.imatge-destacada {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Galeria d'imatges */
+.galeria {
+  padding: 20px;
+}
+
+.imatges {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.imatges img {
+  width: 30%;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+/* Vídeo */
+.video {
+  padding: 20px;
+}
+
+.video iframe {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
 /* Footer */
+
 footer {
   background-color: #333;
   color: white;
