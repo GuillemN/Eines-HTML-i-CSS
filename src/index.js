@@ -8,9 +8,9 @@ import "swiper/modules/pagination.css";
 document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".swiper", {
     modules: [Navigation, Pagination], // Registrem els mòduls
-    loop: true, // Activa la repetició infinita
-    slidesPerView: 1, // Mostra només una imatge a la vegada
-    centeredSlides: true, // Centra els slides per evitar espais en blanc
+    loop: true, // Activa repetició d'imatges
+    slidesPerView: 1, // Mostra una imatge a la vegada
+    centeredSlides: true, // Centra els slides
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
