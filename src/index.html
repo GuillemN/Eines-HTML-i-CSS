@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuines del Món</title>
-    <link rel="stylesheet" href="./styles.scss">
+    <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
     <header>
@@ -18,31 +18,67 @@
     </header>
     <main id="main-content">
         <section class="hero">
-            <img src="img/cuina.jpg" alt="Plats variats de diferents cultures">
+            <!-- Ús de <picture> amb WebP automàtic via Parcel -->
+            <picture>
+                <source srcset="assets/images/cuina.jpg?as=webp" type="image/webp">
+                <img src="assets/images/cuina.jpg" alt="Plats variats de diferents cultures">
+            </picture>
             <div class="hero-text">
                 <h2>Descobreix els sabors d’arreu del món</h2>
                 <p>Explora receptes, restaurants i cultures gastronòmiques de tots els continents.</p>
                 <a href="categoria.html" class="btn">Explorar</a>
             </div>
+
+            <svg class="svg-fork" viewBox="0 0 64 128" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Punts (pues) centrades -->
+                <rect x="21" y="0" width="3" height="30" fill="#e0e0e0" />
+                <rect x="27" y="0" width="3" height="30" fill="#e0e0e0" />
+                <rect x="33" y="0" width="3" height="30" fill="#e0e0e0" />
+                <rect x="39" y="0" width="3" height="30" fill="#e0e0e0" />
+              
+                <!-- Cap de la forquilla alineat -->
+                <path d="M18 30 Q32 45 46 30" fill="#dcdcdc" />
+              
+                <!-- Mànec perfectament centrat -->
+                <rect x="28" y="40" width="8" height="70" rx="4" ry="4" fill="#bcbcbc" />
+              </svg>
         </section>
+
         <section class="about">
             <h2>Sobre nosaltres</h2>
             <article>
                 <p>Apassionats per la cuina, volem compartir amb tu les millors receptes i experiències gastronòmiques del món.</p>
             </article>
         </section>
+
         <section class="swiper" role="region" aria-labelledby="carrusel-title">
             <h2 id="carrusel-title">Plats destacats</h2>
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/pizza-napolitana.jpg" alt="Pizza napolitana"></div>
-                <div class="swiper-slide"><img src="img/sushi.jpg" alt="Plat de sushi japonès"></div>
-                <div class="swiper-slide"><img src="img/tacos.jpg" alt="Tacos mexicans amb carn i verdures"></div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="assets/images/pizza-napolitana.jpg?as=webp" type="image/webp">
+                        <img src="assets/images/pizza-napolitana.jpg" alt="Pizza napolitana">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="assets/images/sushi.jpg?as=webp" type="image/webp">
+                        <img src="assets/images/sushi.jpg" alt="Plat de sushi japonès">
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="assets/images/tacos.jpg?as=webp" type="image/webp">
+                        <img src="assets/images/tacos.jpg" alt="Tacos mexicans amb carn i verdures">
+                    </picture>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Cuines del Món</p>
     </footer>

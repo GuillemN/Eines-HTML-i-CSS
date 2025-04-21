@@ -1,0 +1,28 @@
+
+
+/* pagina detall */
+.detall {
+  padding: 20px;
+}
+
+.imatge-destacada {
+  width: 80%;
+  max-width: 800px;
+}
+
+
+
+.imatges {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.imatges img {
+  max-width: 250px;
+}
+
+.video iframe {
+  width: 80%;
+  max-width: 600px;
+}

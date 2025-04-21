@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Italiana - Detall</title>
-    <link rel="stylesheet" href="./styles.scss">
+    <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
     <header>
@@ -18,24 +18,39 @@
         </nav>
     </header>
     <main id="main-content" aria-labelledby="titol-pizza">
-                <section class="detall">
-            <img src="img/pizza-napolitana.jpg" alt="Pizza napolitana amb tomàquet i formatge">
+        <section class="detall">
+            <picture>
+                <source srcset="assets/images/pizza-napolitana.jpg?as=webp" type="image/webp">
+                <img src="assets/images/pizza-napolitana.jpg" alt="Pizza napolitana amb tomàquet i formatge">
+            </picture>
             <h2 id="titol-pizza">Una icona de la cuina italiana</h2>
             <p>La pizza és un dels plats més coneguts a nivell mundial. Originària de Nàpols, Itàlia, aquesta delícia s'ha convertit en un menjar essencial en moltes cultures.</p>
             <p>Els ingredients bàsics d'una pizza napolitana són la massa amb fermentació llarga, la salsa de tomàquet San Marzano, la mozzarella de búfala i un toc d'alfàbrega. La massa es cou a altes temperatures en un forn de llenya per aconseguir una textura cruixent i esponjosa.</p>
             <p>Avui en dia, podem trobar una gran varietat de pizzes arreu del món, amb adaptacions locals i combinacions úniques que reflecteixen la diversitat gastronòmica.</p>
         </section>
+
         <section class="galeria">
             <h3>Altres imatges</h3>
             <div class="imatges">
-                <img src="img/pizza-napolitana2.jpg" alt="Pizza napolitana clàssica">
-                <img src="img/pizza-napolitana3.jpg" alt="Pizza napolitana amb fons difuminat">
-                <img src="img/pizza-napolitana4.jpg" alt="Pizza napolitana amb extra d'ingredients">
+                <picture>
+                    <source srcset="assets/images/pizza-napolitana2.jpg?as=webp" type="image/webp">
+                    <img src="assets/images/pizza-napolitana2.jpg" alt="Pizza napolitana clàssica">
+                </picture>
+                <picture>
+                    <source srcset="assets/images/pizza-napolitana3.jpg?as=webp" type="image/webp">
+                    <img src="assets/images/pizza-napolitana3.jpg" alt="Pizza napolitana amb fons difuminat">
+                </picture>
+                <picture>
+                    <source srcset="assets/images/pizza-napolitana4.jpg?as=webp" type="image/webp">
+                    <img src="assets/images/pizza-napolitana4.jpg" alt="Pizza napolitana amb extra d'ingredients">
+                </picture>
             </div>
         </section>
+
         <section class="video">
             <h3>Video de pizza napolitana</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JKj-vubSx0c?si=QJzQKUPNoFhBKVsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </section>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JKj-vubSx0c?si=QJzQKUPNoFhBKVsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Cuines del Món</p>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sushi - Detall</title>
-    <link rel="stylesheet" href="./styles.scss">
+    <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
     <header>
@@ -18,21 +18,35 @@
         </nav>
     </header>
     <main id="main-content" aria-labelledby="titol-sushi">
-                <section class="detall">
-            <img src="img/sushi.jpg" alt="Sushi variat amb peix fresc i arròs">
+        <section class="detall">
+            <picture>
+                <source srcset="assets/images/sushi.jpg?as=webp" type="image/webp">
+                <img src="assets/images/sushi.jpg" alt="Sushi variat amb peix fresc i arròs">
+            </picture>
             <h2 id="titol-sushi">L’art de la gastronomia japonesa</h2>
             <p>El sushi és un dels plats més icònics de la cuina japonesa. Originari del Japó, s'ha convertit en un menjar reconegut arreu del món.</p>
             <p>Els ingredients bàsics del sushi inclouen arròs amb vinagre de poma, peix cru com el salmó o la tonyina, algues nori...</p>
             <p>Actualment, el sushi s'ha expandit a escala global amb variacions modernes com els makis, els nigiris, els sashimis i els rolls californians, adaptant-se a diferents gustos i cultures.</p>
         </section>
+
         <section class="galeria">
             <h3>Varietats de Sushi</h3>
             <div class="imatges">
-                <img src="img/sushi2.jpg" alt="Plató de nigiris amb tonyina i salmó">
-                <img src="img/sushi3.jpg" alt="Sushi amb pa arrebossat">
-                <img src="img/sushi4.jpg" alt="Sushi amb fons desenfocat ">
+                <picture>
+                    <source srcset="assets/images/sushi2.jpg?as=webp" type="image/webp">
+                    <img src="assets/images/sushi2.jpg" alt="Plató de nigiris amb tonyina i salmó">
+                </picture>
+                <picture>
+                    <source srcset="assets/images/sushi3.jpg?as=webp" type="image/webp">
+                    <img src="assets/images/sushi3.jpg" alt="Sushi amb pa arrebossat">
+                </picture>
+                <picture>
+                    <source srcset="assets/images/sushi4.jpg?as=webp" type="image/webp">
+                    <img src="assets/images/sushi4.jpg" alt="Sushi amb fons desenfocat ">
+                </picture>
             </div>
         </section>
+
         <section class="video">
             <h3>Video d'exemple de sushi</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/CmnHfK4JkGw?si=NMmzj27kLp4FAILm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

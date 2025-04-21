@@ -1,0 +1,38 @@
+
+/* pagina categories */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.plat {
+  background: white;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.plat a {
+  text-decoration: none;
+}
+
+.plat img {
+  width: 100%;
+  height: 150px;
+}
+
+
+
+.plat-info h3 {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.plat-info p {
+  font-size: 14px;
+  color: #575353;
+}

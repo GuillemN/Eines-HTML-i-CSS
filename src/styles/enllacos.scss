@@ -1,0 +1,23 @@
+/*Pagina enllaços */
+.enllacos-container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .enllacos-container .fonts {
+    text-align: left;
+  }
+  
+  .enllacos-container ul li {
+    margin: 8px 0;
+  }
+  
+  .enllacos-container ul li a {
+    color: #007bff;
+  }
+  
