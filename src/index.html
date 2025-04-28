@@ -18,16 +18,26 @@
     </header>
     <main id="main-content">
         <section class="hero">
-            <!-- Ús de <picture> amb WebP automàtic via Parcel -->
             <picture>
-                <source srcset="assets/images/cuina.jpg?as=webp" type="image/webp">
-                <img src="assets/images/cuina.jpg" alt="Plats variats de diferents cultures">
+                <source 
+                    media="(min-width: 800px)" 
+                    srcset="assets/images/cuina.jpg?width=1200&as=webp" 
+                    type="image/webp">
+        
+                <source 
+                    media="(max-width: 799px)" 
+                    srcset="assets/images/cuina.jpg?width=500&as=webp" 
+                    type="image/webp">
+        
+                <img 
+                    src="assets/images/cuina.jpg?width=1200" 
+                    alt="Plats variats de diferents cultures">
             </picture>
+        
             <div class="hero-text">
                 <h2>Descobreix els sabors d’arreu del món</h2>
                 <p>Explora receptes, restaurants i cultures gastronòmiques de tots els continents.</p>
                 <br>
-                <!-- Substitució del botó per la forquilla -->
                 <svg class="svg-fork" viewBox="0 0 64 128" xmlns="http://www.w3.org/2000/svg" aria-label="Explorar" role="button" tabindex="0">
                     <rect x="21" y="0" width="3" height="30" fill="#e0e0e0" />
                     <rect x="27" y="0" width="3" height="30" fill="#e0e0e0" />
@@ -37,8 +47,6 @@
                     <rect x="28" y="40" width="8" height="70" rx="4" ry="4" fill="#bcbcbc" />
                 </svg>
             </div>
-
-
         </section>
 
         <section class="about">

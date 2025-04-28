@@ -24,8 +24,15 @@
             <article class="plat">
                 <a href="detall-pizza.html">
                     <picture>
-                        <source srcset="assets/images/pizza.jpg?as=webp" type="image/webp">
-                        <img src="assets/images/pizza.jpg" alt="Pizza italiana de pepperoni">
+                        <source 
+                            media="(min-width: 800px)" 
+                            srcset="assets/images/pizza.jpg?width=800&as=webp" 
+                            type="image/webp">
+                        <source 
+                            media="(max-width: 799px)" 
+                            srcset="assets/images/pizza.jpg?width=400&as=webp" 
+                            type="image/webp">
+                        <img src="assets/images/pizza.jpg?width=800" alt="Pizza italiana de pepperoni">
                     </picture>
                     <div class="plat-info">
                         <h3>Pizza Italiana</h3>
@@ -37,8 +44,15 @@
             <article class="plat">
                 <a href="detall-sushi.html">
                     <picture>
-                        <source srcset="assets/images/sushi.jpg?as=webp" type="image/webp">
-                        <img src="assets/images/sushi.jpg" alt="Sushi japonès amb salmó">
+                        <source 
+                            media="(min-width: 800px)" 
+                            srcset="assets/images/sushi.jpg?width=800&as=webp" 
+                            type="image/webp">
+                        <source 
+                            media="(max-width: 799px)" 
+                            srcset="assets/images/sushi.jpg?width=400&as=webp" 
+                            type="image/webp">
+                        <img src="assets/images/sushi.jpg?width=800" alt="Sushi japonès amb salmó">
                     </picture>
                     <div class="plat-info">
                         <h3>Sushi Japonès</h3>
@@ -48,10 +62,17 @@
             </article>
 
             <article class="plat">
-                <a href="">
+                <a href="#">
                     <picture>
-                        <source srcset="assets/images/tacos.jpg?as=webp" type="image/webp">
-                        <img src="assets/images/tacos.jpg" alt="Tacos mexicans amb carn i verdures">
+                        <source 
+                            media="(min-width: 800px)" 
+                            srcset="assets/images/tacos.jpg?width=800&as=webp" 
+                            type="image/webp">
+                        <source 
+                            media="(max-width: 799px)" 
+                            srcset="assets/images/tacos.jpg?width=400&as=webp" 
+                            type="image/webp">
+                        <img src="assets/images/tacos.jpg?width=800" alt="Tacos mexicans amb carn i verdures">
                     </picture>
                     <div class="plat-info">
                         <h3>Tacos Mexicans</h3>
