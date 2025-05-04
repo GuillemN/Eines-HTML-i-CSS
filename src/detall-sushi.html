@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sushi - Detall</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushi - Detall</title>
+  <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
-    <header>
-        <h1>Sushi</h1>
-        <nav aria-label="Navegació principal">
-            <ul>
-                <li><a href="index.html">Inici</a></li>
-                <li><a href="categoria.html">Plats</a></li>
-                <li><a href="enllacos.html">Enllaços</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Sushi</h1>
+    <nav aria-label="Navegació principal">
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="categoria.html">Plats</a></li>
+        <li><a href="enllacos.html">Enllaços</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main id="main-content" aria-labelledby="titol-sushi">
-        <section class="detall">
-            <picture>
-                <source 
-                    media="(min-width: 800px)" 
-                    srcset="assets/images/sushi.jpg?width=1200&as=webp" 
-                    type="image/webp">
-                <source 
-                    media="(max-width: 799px)" 
-                    srcset="assets/images/sushi.jpg?width=500&as=webp" 
-                    type="image/webp">
-                <img src="assets/images/sushi.jpg?width=1200" alt="Sushi variat amb peix fresc i arròs" loading="lazy"> 
-            </picture>
+  <main id="main-content" aria-labelledby="titol-sushi">
+    <section class="detall">
+      <picture>
+        <source media="(min-width: 800px)" srcset="assets/images/sushi.jpg?width=1200&as=webp" type="image/webp">
+        <source media="(max-width: 799px)" srcset="assets/images/sushi.jpg?width=500&as=webp" type="image/webp">
+        <img src="assets/images/sushi.jpg?width=1200" alt="Sushi variat amb peix fresc i arròs" loading="eager" class="imatge-destacada">
+      </picture>
 
             <h2 id="titol-sushi">L’art de la gastronomia japonesa</h2>
             <p>El sushi és un dels plats més icònics de la cuina japonesa. Originari del Japó, s'ha convertit en un menjar reconegut arreu del món.</p>
@@ -41,61 +35,36 @@
         <section class="galeria">
             <h3>Varietats de Sushi</h3>
             <div class="imatges">
-                <picture>
-                    <source 
-                        media="(min-width: 800px)" 
-                        srcset="assets/images/sushi2.jpg?width=800&as=webp" 
-                        type="image/webp">
-                    <source 
-                        media="(max-width: 799px)" 
-                        srcset="assets/images/sushi2.jpg?width=400&as=webp" 
-                        type="image/webp">
-                    <img src="assets/images/sushi2.jpg?width=800" alt="Plató de nigiris amb tonyina i salmó" loading="lazy"> 
-                </picture>
-
-                <picture>
-                    <source 
-                        media="(min-width: 800px)" 
-                        srcset="assets/images/sushi3.jpg?width=800&as=webp" 
-                        type="image/webp">
-                    <source 
-                        media="(max-width: 799px)" 
-                        srcset="assets/images/sushi3.jpg?width=400&as=webp" 
-                        type="image/webp">
-                    <img src="assets/images/sushi3.jpg?width=800" alt="Sushi amb pa arrebossat" loading="lazy"> 
-                </picture>
-
-                <picture>
-                    <source 
-                        media="(min-width: 800px)" 
-                        srcset="assets/images/sushi4.jpg?width=800&as=webp" 
-                        type="image/webp">
-                    <source 
-                        media="(max-width: 799px)" 
-                        srcset="assets/images/sushi4.jpg?width=400&as=webp" 
-                        type="image/webp">
-                    <img src="assets/images/sushi4.jpg?width=800" alt="Sushi amb fons desenfocat" loading="lazy">
-                </picture>
+              <picture>
+                <source media="(min-width: 800px)" srcset="assets/images/sushi2.jpg?width=800&as=webp" type="image/webp">
+                <source media="(max-width: 799px)" srcset="assets/images/sushi2.jpg?width=400&as=webp" type="image/webp">
+                <img src="assets/images/sushi2.jpg?width=800" alt="Plató de nigiris" loading="lazy">
+              </picture>
+      
+              <picture>
+                <source media="(min-width: 800px)" srcset="assets/images/sushi3.jpg?width=800&as=webp" type="image/webp">
+                <source media="(max-width: 799px)" srcset="assets/images/sushi3.jpg?width=400&as=webp" type="image/webp">
+                <img src="assets/images/sushi3.jpg?width=800" alt="Sushi amb pa arrebossat" loading="lazy">
+              </picture>
+      
+              <picture>
+                <source media="(min-width: 800px)" srcset="assets/images/sushi4.jpg?width=800&as=webp" type="image/webp">
+                <source media="(max-width: 799px)" srcset="assets/images/sushi4.jpg?width=400&as=webp" type="image/webp">
+                <img src="assets/images/sushi4.jpg?width=800" alt="Sushi amb fons desenfocat" loading="lazy">
+              </picture>
             </div>
-        </section>
-
-        <section class="video">
+          </section>
+      
+          <section class="video">
             <h3>Vídeo d'exemple de sushi</h3>
-            <iframe 
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/CmnHfK4JkGw?si=NMmzj27kLp4FAILm" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-            </iframe>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Cuines del Món</p>
-    </footer>
-</body>
-</html>
+            <button id="load-video">Carrega el vídeo</button>
+          </section>
+        </main>
+      
+        <footer>
+          <p>&copy; 2025 Cuines del Món</p>
+        </footer>
+      
+        <script type="module" src="./index.js" defer></script>
+      </body>
+      </html>
